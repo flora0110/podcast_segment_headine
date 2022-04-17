@@ -3,19 +3,19 @@ http://mattmahoney.net/dc/text8.zip
 # wrdvecs.bin
 打開這個
 '''
-if not os.path.exists(wrdvec_path):
-  sentences = word2vec.Text8Corpus('./text8')
-  model = word2vec.Word2Vec(sentences, cbow_mean=1,
-                            hs=1, sample=0.00001, window=15)
-model.save(wrdvec_path)
+if not os.path.exists(wrdvec_path):   
+  sentences = word2vec.Text8Corpus('./text8')   
+  model = word2vec.Word2Vec(sentences, cbow_mean=1,   
+                            hs=1, sample=0.00001, window=15)   
+model.save(wrdvec_path)   
 '''
 # pip install
-Package                      Version
----------------------------- -------------------
-absl-py                      1.0.0
-aiohttp                      3.8.1
-aiosignal                    1.2.0
-astunparse                   1.6.3
+Package                      Version   
+---------------------------- -------------------   
+absl-py                      1.0.0   
+aiohttp                      3.8.1   
+aiosignal                    1.2.0   
+astunparse                   1.6.3   
 async-timeout                4.0.2
 attrs                        21.4.0
 cachetools                   5.0.0
